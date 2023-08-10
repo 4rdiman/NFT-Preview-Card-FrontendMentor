@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    background-color:hsl(217, 54%, 11%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 330px;
+    height: fit-content;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-main{
+    position: relative;
+    cursor: pointer;
+}
+
+.image-main img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-main:hover img{
+    opacity: 0.3;
+}
+
+.image-main:hover .middle {
+    opacity: 1;
+}
+  
+.title{
+    width: fit-content;
+    font-weight: 600;
+}
+
+.title:hover{
+    cursor: pointer;
+}
+
+.title:active{
+    color: hsl(178, 100%, 50%);
+}
+
+.description{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+/* price */
+.container-price{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    padding-bottom: 20px;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.days{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* avatar */
+.container-avatar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar{
+    width: 13%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.creation{
+    color: hsl(215, 51%, 70%);
+}
+
+.creator:hover{
+    cursor: pointer;
+}
+
+.creator:active{
+    color:hsl(178, 100%, 50%);;
+}
