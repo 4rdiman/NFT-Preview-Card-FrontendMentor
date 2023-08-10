@@ -24,7 +24,7 @@ main{
     color: hsl(0, 0%, 100%);
     background-color: hsl(216, 50%, 16%);
     border-radius: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px, rgba(0, 0, 0, 0.1) 0px 8px 24px, rgba(0, 0, 0, 0.1) 0px 16px 48px;
 
     display: flex;
     flex-direction: column;
